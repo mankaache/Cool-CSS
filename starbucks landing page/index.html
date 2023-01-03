@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <section>
+        <div class="circle"></div>
+      <header>
+        <a href="#" class="logo">
+          <img src="./images/logo.png" />
+        </a>
+        <ul>
+          <li><a href="#">Home</a></li>
+          <li><a href="#">Menu</a></li>
+          <li><a href="#">What's New</a></li>
+          <li><a href="#">Contact</a></li>
+        </ul>
+      </header>
+      <div class="content">
+        <div class="textbox">
+          <h2>
+            It's not just coffee <br />
+            It's <span>Starbucks</span>
+          </h2>
+          <p>
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sit, eos
+            natus dignissimos fugit iste voluptatum corrupti magnam porro
+            explicabo rerum cumque? Itaque beatae culpa perspiciatis nobis,
+            maiores odio sint facilis.
+          </p>
+          <a href="">Learn More </a>
+        </div>
+        <div class="imgBox">
+          <img src="./images/cup1.png" class="starbucks" alt="" />
+        </div>
+      </div>
+
+      <ul class="thumb">
+        <li><img src="./images/thumb1.png" onclick="imgslider('./images/cup1.png'); changeCircle('#017143')"></li>
+        <li><img src="./images/thumb2.png" onclick="imgslider('./images/cup2.png'); changeCircle('#eb7495')"></li>
+        <li><img src="./images/thumb3.png" onclick="imgslider('./images/cup3.png'); changeCircle('#d752b1')"></li>
+      </ul>
+      <ul class="sci">
+        <li><a href="#"><img src="./images/facebook.png"></a></li>
+        <li><a href="#"><img src="./images/instagram.png"></a></li>
+        <li><a href="#"><img src="./images/twitter.png"></a></li>
+      </ul>
+    </section>
+
+
+
+
+    <script>
+        function imgslider(anything){
+            document.querySelector('.starbucks').src = anything;
+        }
+        function changeCircle(color){
+            const circle = document.querySelector('.circle')
+            circle.style.background = color
+        }
+    </script>
+  </body>
+</html>
