@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <link rel="stylesheet" href="./styles.css">
+    <title>Document</title>
+</head>
+<body>
+     <div class="navigation">
+        <div class="userBx">
+            <div class="imgBx">
+                <img src="./image.jpg">
+            </div>
+            <p class="username">Alina Smith</p>
+        </div>
+        <div class="menuToggle"></div>
+        <ul class="menu">
+            <li><a href="#">My Profile</a></li>
+            <li><a href="#">Messages</a></li>
+            <li><a href="#">Notification</a></li>
+            <li><a href="#">settings</a></li>
+            <li><a href="#">help & support</a></li>
+            <li><a href="#">Logout</a></li>
+        </ul>
+    </div>
+
+
+    <script>
+        let menuToggle = document.querySelector(".menuToggle");
+        let navigation = document.querySelector('.navigation');
+        menuToggle.onclick = function(){
+            navigation.classList.toggle('active')
+        }
+    </script>
+</body>
+</html>
